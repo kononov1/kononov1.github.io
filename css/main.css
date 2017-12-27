@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+body, ul, p, h1, h3 {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  text-align: center; }
+
+p {
+  padding: 10px; }
+
+.img_newss {
+  width: 400px;
+  height: 500px;
+  float: right; }
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EDEDED;
+  height: 100%; }
+
+li {
+  color: white;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    text-decoration: underline; }
+
+.black {
+  padding: 10px;
+  color: black; }
+
+.grid {
+  display: grid; }
+
+.wrap {
+  position: relative;
+  min-height: 100%; }
+
+.menu {
+  float: left;
+  width: 205px;
+  background-color: #090217;
+  color: white;
+  font-size: 13px; }
+  .menu ul {
+    padding: 0;
+    text-align: center; }
+    .menu ul li {
+      border-bottom: 1px solid #3a3445;
+      padding: 4px; }
+      .menu ul li:hover {
+        background-color: #100429; }
+    .menu ul .active {
+      background-color: #17053b; }
+
+.item {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+
+.image {
+  width: 100%;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.text_dec {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding: 4px;
+  color: black;
+  margin: 5px;
+  text-align: center; }
+
+.dec3 {
+  bottom: 90px; }
+
+.dec2 {
+  bottom: 60px; }
+
+.dec1 {
+  bottom: 30px; }
+
+.decB {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.decS {
+  font-size: 12px; }
+
+.item_content {
+  position: absolute;
+  display: block;
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  border: 2px solid white;
+  opacity: .8; }
+  .item_content:hover {
+    background-color: black;
+    opacity: .5; }
+  .item_content .item_icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 40px; }
+
+/* Модальные окна */
+.modal {
+  width: 500px;
+  background-color: #333333;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 3;
+  border: 2px solid white;
+  display: none; }
+  .modal #close {
+    display: block;
+    background-color: #090217;
+    width: 30px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    font-size: 24px;
+    opacity: .8; }
+    .modal #close:hover {
+      opacity: .9; }
+
+#overlay {
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+/* Шапка */
+header {
+  background-color: #090217;
+  height: 50px; }
+  header li {
+    font-size: 16px;
+    line-height: 2.2em;
+    padding: 0 10px;
+    display: inline-block; }
+  header .name {
+    width: 184px;
+    height: 44px;
+    text-align: right;
+    background: url("../img/logo.png") no-repeat #4B2C8B left;
+    -webkit-background-size: contain;
+            background-size: contain;
+    -webkit-background-origin: content-box;
+            background-origin: content-box;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-right: 1px solid #5C458B;
+    padding: 3px 10px; }
+
+/* Концерт */
+.toor_nav {
+  height: 404px; }
+  .toor_nav .toor_item {
+    position: relative;
+    height: 50px; }
+    .toor_nav .toor_item span {
+      font-weight: bold; }
+    .toor_nav .toor_item .toor_date {
+      position: absolute;
+      text-align: center;
+      line-height: 0.8;
+      margin: 10px; }
+      .toor_nav .toor_item .toor_date span {
+        font-size: 30px; }
+    .toor_nav .toor_item .toor_name {
+      width: 130px;
+      margin: 10px;
+      border-bottom: 1px solid white;
+      text-align: right;
+      position: absolute;
+      right: 0; }
+
+/* Карусель */
+.owl-carousel .item {
+  height: 404px;
+  display: block; }
+  .owl-carousel .item p {
+    background-color: #090217;
+    color: white; }
+
+/* Новости */
+.news {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px; }
+
+/* Футер */
+footer {
+  display: inline-block;
+  background-color: #090217;
+  color: white;
+  width: 100%; }
+  footer .footer_info {
+    width: 76%;
+    float: left;
+    padding: 0 10px 0 10px;
+    font-size: 12px; }
+    footer .footer_info .social {
+      padding: 0 10px; }
+      footer .footer_info .social ul {
+        float: left; }
+        footer .footer_info .social ul li {
+          text-decoration: underline;
+          display: inline-block;
+          padding: 5px;
+          font-size: 16px; }
+      footer .footer_info .social .autor {
+        float: right; }
+  footer .footer_sponsors {
+    width: 20%;
+    float: right; }
+    footer .footer_sponsors a {
+      height: 40px;
+      display: block;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #5C458B;
+      border-bottom: 1px solid #4B2C8B; }
+      footer .footer_sponsors a:hover {
+        background-color: #4B2C8B; }
+
+/* Навигация */
+.menu_name {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  background-color: #3c236f;
+  border-bottom: 1px solid #29184d;
+  cursor: pointer; }
+  .menu_name:hover {
+    background-color: #29184d; }
+
+/* Музыка */
+.music {
+  width: 100%;
+  height: 100%; }
+  .music p {
+    padding: 10px; }
+  .music .gorgorods {
+    width: 450px;
+    height: 357px; }
+  .music .zhids {
+    width: 452px;
+    height: 357px; }
+  .music .mixxxtape2s {
+    width: 450px;
+    height: 357px; }
+  .music .mixxxtape1s {
+    width: 646px;
+    height: 400px; }
+  .music .music_play {
+    float: left;
+    margin-right: 10px; }
+    .music .music_play .music_item {
+      margin: 5px;
+      position: absolute; }
+      .music .music_play .music_item li {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 6px 10px;
+        cursor: pointer;
+        margin-bottom: 5px; }
+        .music .music_play .music_item li:hover {
+          background-color: #05010F;
+          opacity: .9; }
+    .music .music_play .gorgorod, .music .music_play .mixxxtape2, .music .music_play .zhid {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2; }
+    .music .music_play .mixxxtape1 {
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
+      column-count: 4; }
+    .music .music_play audio {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+
+/* Видео */
+.full_video {
+  height: 384px; }
+
+.video {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 165px; }
+
+/* Концерт */
+.toor {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  height: 100%; }
+
+/* Магазин */
+.shop {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  min-height: 100%; }
+  .shop .new_pos {
+    position: absolute;
+    background-color: #FFF;
+    color: black;
+    padding: 5px;
+    top: 5px;
+    right: 5px; }
+  .shop .buy {
+    position: absolute;
+    font-size: 20px;
+    background-color: green;
+    opacity: .8;
+    color: #fff;
+    padding: 5px;
+    bottom: 5px;
+    right: 5px; }
+    .shop .buy:hover {
+      opacity: 1; }
+
+.other_img {
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  bottom: -82px;
+  width: 100%;
+  background-color: #FFF;
+  height: 80px; }
+  .other_img .other_img_item {
+    border: 1px solid white;
+    cursor: pointer; }
+    .other_img .other_img_item:hover {
+      border: 4px solid white; }
+
+/* Фото */
+.photo {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 165px; }
+
+.image_modal {
+  width: 800px;
+  position: absolute;
+  margin-left: -400px; }
+
+.image {
+  width: 100%;
+  height: 500px;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .image i {
+    font-size: 40px;
+    color: white;
+    opacity: .5;
+    position: absolute;
+    top: 45%;
+    cursor: pointer; }
+    .image i:hover {
+      opacity: 1; }
+  .image .arrow_right {
+    right: 5px; }
+  .image .arrow_left {
+    left: 5px; }
+
+@media only screen and (max-width: 880px) {
+  .music .mixxxtape1s {
+    width: 100%; }
+  .video {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (max-width: 800px) {
+  .image_modal {
+    margin-left: 0;
+    left: 0;
+    width: 100%; } }
+
+@media only screen and (max-width: 752px) {
+  .menu_item ul {
+    display: none; }
+  .toor, .shop {
+    grid-template-columns: repeat(2, 1fr); }
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px; }
+  header {
+    height: 40px; }
+    header .name {
+      width: 156px;
+      height: 34px;
+      font-size: 16px; }
+    header li {
+      font-size: 12px;
+      padding: 0 5px; }
+  .menu {
+    width: 176px; }
+  .toor_nav .toor_item .toor_date {
+    margin: 6px; }
+    .toor_nav .toor_item .toor_date span {
+      font-size: 24px; }
+  .toor_nav .toor_item .toor_name {
+    width: 110px;
+    margin: 6px; }
+    .toor_nav .toor_item .toor_name span {
+      font-size: 12px; }
+  footer .footer_sponsors a {
+    height: 48px; }
+  .text_dec {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 730px) {
+  .photo {
+    grid-template-columns: repeat(3, 1fr); }
+  .video {
+    grid-template-columns: repeat(2, 1fr); }
+  .music .music_play .mixxxtape1 {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; }
+  .music .mixxxtape1s {
+    height: 500px; } }
+
+@media only screen and (max-width: 652px) {
+  .music .gorgorods, .music .mixxxtape2s, .music .zhids {
+    width: 100%;
+    height: 310px; }
+  .img_newss {
+    width: 100%;
+    height: 400px; } }
+
+@media only screen and (max-width: 550px) {
+  .modal {
+    width: 100%;
+    left: 0;
+    margin-left: 0; }
+  .image {
+    height: 300px; }
+  .full_video {
+    height: 250px; }
+  .music .music_play audio {
+    position: fixed; }
+  .music .music_play .mixxxtape1 {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; }
+  .music .mixxxtape1s {
+    height: 620px; }
+  .toor, .shop {
+    grid-template-columns: repeat(1, 1fr); }
+  header {
+    height: auto;
+    background-color: #090217; }
+    header li {
+      width: none;
+      text-align: center;
+      font-size: 16px;
+      display: block;
+      border-bottom: 1px solid #4B2C8B; }
+    header .name {
+      width: auto;
+      text-align: center; }
+  .news {
+    grid-template-columns: repeat(1, 1fr); }
+  .menu {
+    width: 100%;
+    float: none; }
+  .owl-carousel .item {
+    width: 100%;
+    height: 180px; }
+  .toor_nav .toor_item {
+    padding: 0 10px; }
+  footer .footer_info {
+    width: auto; }
+  footer .footer_sponsors {
+    display: none; } }
+
+@media only screen and (max-width: 440px) {
+  .photo {
+    grid-template-columns: repeat(1, 1fr); }
+  .music .gorgorods {
+    height: 420px; }
+  .music .mixxxtape1s {
+    height: 1160px; }
+  .music .mixxxtape2s, .music .zhids {
+    height: 530px; }
+  .music .music_play .music_item {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; }
+  .video {
+    grid-template-columns: repeat(1, 1fr); } }

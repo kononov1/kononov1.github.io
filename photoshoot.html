@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>OXXXYMIRON | Мультимедиа</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Шапка -->
+
+<header>
+	<ul>
+		<li class="name"><span><b>Oxxxy</b>media</span></li>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="media.html">Мультимедиа</a></li>
+		<li><a href="toor.html">Концерты</a></li>
+		<li><a href="shop.html">Магазин</a></li>
+		<li><a href="bio.html">Биография</a></li>
+	</ul>
+</header>
+
+<!-- Меню -->
+<div class="wrap">
+<section class="menu">
+	<div id="menu1" class="menu_item">
+		<span class="menu_name">Музыка</span>
+		<ul>
+			<a href="media.html"><li>ГОРГОРОД</li></a>
+			<a href="mixxxtape1.html"><li>miXXXtape I</li></a>
+			<a href="mixxxtape2.html"><li>miXXXtape II</li></a>
+			<a href="zhid.html"><li>Вечный жид</li></a>
+		</ul>
+	</div>
+	<div id="menu2" class="menu_item">
+		<span class="menu_name">Видео</span>
+		<ul>
+			<a href="clips.html"><li>Клипы</li></a>
+			<a href="battles.html"><li>Батлы</li></a>
+			<a href="interview.html"><li>Интервью</li></a>
+			<a href="toor_video.html"><li>С концертов</li></a>
+			<a href="other_video.html"><li>Другое</li></a>
+		</ul>
+	</div>
+		<div id="menu3" class="menu_item">
+		<span class="menu_name">Фото</span>
+		<ul>
+			<a href="photoshoot.html"><li class="active">Фотосессии</li></a>
+			<a href="life.html"><li>Из жизни</li></a>
+			<a href="fan_art.html"><li>Фан-Арт</li></a>
+		</ul>
+	</div>
+</section>
+
+<!-- Фото -->
+
+<section class="photo grid"></section>
+
+<!-- Футер -->
+
+<footer class="footer">
+	<div class="footer_info">
+		<p>Oxxxymiron — русскоязычный рэп-, грайм-, фристайл-исполнитель и исполнительный директор букинг-агентства «Booking Machine». Один из основателей и бывший участник лейбла «Vagabund».</p>
+		<div class="social"><ul>
+			<li><a href="#"><i class="fa fa-vk"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<span class="autor">Разработчик: <a href="#">Кононов Максим</a></span></div>
+	</div>
+	<div class="footer_sponsors">
+		<a href="" class="item" style="background-image: url('img/reebok.png')"></a>
+		<a href="" class="item" style="background-image: url('img/mts.png')"></a>
+	</div>
+</footer>
+
+<div id="overlay"></div>
+
+<script id="photo_block" type="text/x-handlebars-template">
+{{#each photoshoot}}
+	<div id="{{id}}" class="item grid item_modal" style="background-image: url('{{img}}')">
+		<a href="#" class="item_content"></a></div>
+
+	<div id="mod{{id}}" class="image_modal modal">
+		<i id="close" class="fa fa-times" aria-hidden="true"></i>
+		<div class="image" style="background-image: url('{{img}}')">
+		<i id="arrow_right" class="arrow_right fa fa-arrow-circle-right"></i>
+		<i id="arrow_left" class="arrow_left fa fa-arrow-circle-left"></i>
+		</div>
+	</div>
+{{/each}}
+</script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/photo.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

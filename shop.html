@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>OXXXYMIRON | Мультимедиа</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Шапка -->
+
+<header>
+	<ul>
+		<li class="name"><span><b>Oxxxy</b>media</span></li>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="media.html">Мультимедиа</a></li>
+		<li><a href="toor.html">Концерты</a></li>
+		<li><a href="shop.html">Магазин</a></li>
+		<li><a href="bio.html">Биография</a></li>
+	</ul>
+</header>
+
+<!-- Магазин -->
+
+<section id="container" class="shop grid"></section>
+
+<!-- Футер -->
+
+<footer class="footer">
+	<div class="footer_info">
+		<p>Oxxxymiron — русскоязычный рэп-, грайм-, фристайл-исполнитель и исполнительный директор букинг-агентства «Booking Machine». Один из основателей и бывший участник лейбла «Vagabund».</p>
+		<div class="social"><ul>
+			<li><a href="#"><i class="fa fa-vk"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<span class="autor">Разработчик: <a href="#">Кононов Максим</a></span></div>
+	</div>
+	<div class="footer_sponsors">
+		<a href="" class="item" style="background-image: url('img/reebok.png')"></a>
+		<a href="" class="item" style="background-image: url('img/mts.png')"></a>
+	</div>
+</footer>
+
+<div id="overlay"></div>
+
+<script id="items_block" type="text/x-handlebars-template">
+{{#each shop}}
+	<div id="shopblock" class="item grid" style="background-image: url('{{img1}}')">
+		<a id="{{id}}" href="#" value="{{new}}" class="new item_content item_modal">
+		<p class="text_dec dec1 decB">{{name}}</p>
+		<p class="text_dec">{{price}}</p>
+		</a>	
+	</div>
+
+	<div id="mod{{id}}" class="modal">
+		<i id="close" class="fa fa-times" aria-hidden="true"></i>
+		<div class="shop_item_img image" style="background-image: url('{{img1}}')">
+			<p class="text_dec dec2 decS">В наличии</p>
+			<p id="in_name" class="text_dec dec1 decB">{{name}}</p>
+			<p class="text_dec">{{price}}</p>
+			<a href="{{url}}" target="_blank" class="buy">Купить</a>
+		</div>
+		<div id="other_img" class="other_img grid">
+			<div class="other_img_item item grid" style="background-image: url('{{img1}}')"></div>
+			<div class="other_img_item item grid" style="background-image: url('{{img2}}')"></div>
+			<div class="other_img_item item grid" style="background-image: url('{{img3}}')"></div>
+			<div class="other_img_item item grid" style="background-image: url('{{img4}}')"></div>
+		</div>
+	</div>
+{{/each}}
+</script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
