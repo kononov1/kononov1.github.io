@@ -30,6 +30,13 @@ $('.item_modal').each(function () {
         });
     });
 });
+
+$('.menu_item').each(function () {
+  $(this).find('.menu_name').click(function() {
+    $(this).next('ul').slideToggle();
+  });
+});
+
 });
 
 
