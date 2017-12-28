@@ -65,7 +65,7 @@ var toorItems =
     "date": "15",
     "month": "ноября",
     "location": "Новосибирск",
-    "location2": "ЛДС СИБИРЬ",
+    "location2": "ЛДС Сибирь",
     "img": "img/toor2.jpg"},
     {"name": "IMPERIVM",
     "date": "10",
