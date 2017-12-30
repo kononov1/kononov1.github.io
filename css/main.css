@@ -402,8 +402,6 @@ footer {
     width: 100%; } }
 
 @media only screen and (max-width: 752px) {
-  .menu_item ul {
-    display: none; }
   .toor, .shop {
     grid-template-columns: repeat(2, 1fr); }
   .news {
@@ -455,6 +453,8 @@ footer {
     height: 400px; } }
 
 @media only screen and (max-width: 550px) {
+  .menu_item ul {
+    display: none; }
   .modal {
     width: 100%;
     left: 0;
